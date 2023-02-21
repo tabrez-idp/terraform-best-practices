@@ -15,3 +15,5 @@ security group before the EC2 Instance, because the EC2 Instance
 references the ID of the security group. You can even get Terraform to show
 you the dependency graph by running the graph command:
 $ terraform graph
+
+Best practice using user_data is to use file() rather than using heredoc syntax (<<-EOF)
